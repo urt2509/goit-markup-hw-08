@@ -1,0 +1,45 @@
+.icon {
+  margin: 0 32px 30px 32px;
+  min-width: 206px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+
+  &__list {
+    @extend %list;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__link {
+    @include centerFlex(flex);
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: $iconText;
+    transition: fill 250ms $transitionTimeFunction;
+  }
+
+  &__link:hover {
+    fill: $secondaryTextColor;
+    background-color: $accentColor;
+    transition: background-color 250ms $transitionTimeFunction,
+      fill 250ms $transitionTimeFunction;
+  }
+
+  &__link--bottom {
+    fill: $secondaryTextColor;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.icon-footer {
+  margin-left: 70px;
+  color: $secondaryTextColor;
+}

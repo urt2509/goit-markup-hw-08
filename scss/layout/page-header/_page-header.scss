@@ -1,0 +1,10 @@
+.page-header {
+  border-bottom: 1px solid $borderColor;
+}
+
+.header-nav {
+  @include centerFlex(flex);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}

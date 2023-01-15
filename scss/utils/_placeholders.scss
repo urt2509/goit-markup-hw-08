@@ -1,0 +1,17 @@
+%list {
+  display: flex;
+  margin: 0;
+  margin-left: auto;
+  padding-left: 0;
+  align-items: center;
+  list-style: none;
+}
+
+%link {
+  text-decoration: none;
+  transition: color 250ms $transitionTimeFunction;
+}
+
+%section {
+  padding: 94px 0;
+}

@@ -1,0 +1,45 @@
+.checkform {
+    @include centerFlex(flex);
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 425px;
+
+    &__input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    &__icon {
+        border: 2px solid $titleTextColor;
+        border-radius: 4px;
+        fill: transparent;
+
+        .checkform__input:checked & {
+            fill: $secondaryTextColor;
+            border: transparent;
+            background-color: $accentColor;
+            transition: transform 250ms $transitionTimeFunction;
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: inherit;
+        color: $primaryTextColor;
+    }
+
+    &__link {
+        @extend %link;
+        color: $accentColor;
+        padding-bottom: 1px;
+        line-height: 1.17px;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}

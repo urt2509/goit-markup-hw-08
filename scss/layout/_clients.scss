@@ -1,0 +1,38 @@
+.clients {
+  @extend %section;
+
+  &__list {
+    @include centerFlex(flex);
+    @extend %list;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    @extend %link;
+    @include centerFlex(flex);
+    flex-basis: calc((100% - 150px) / 6);
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconText;
+    border-radius: 4px;
+    color: $iconText;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accentColor;
+      color: $accentColor;
+      transition: border 250ms $transitionTimeFunction,
+        color 250ms $transitionTimeFunction;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

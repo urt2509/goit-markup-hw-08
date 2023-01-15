@@ -1,0 +1,89 @@
+.button {
+  @include centerFlex(inline-block);
+  border-radius: 4px;
+  border: transparent;
+  padding: 10px 24px;
+  min-width: 67px;
+  background-color: $accentColor;
+  color: $secondaryTextColor;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+}
+
+.button-primary {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    background-color: $buttonOrderActive;
+    transition: background-color 250ms $transitionTimeFunction;
+    box-shadow: 0px 4px 4px $buttonPrimaryShadow;
+  }
+}
+
+.button-send {
+  @include centerFlex(flex);
+  gap: 10px;
+  width: 200px;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $secondaryTextColor;
+
+  &__icon {
+    fill: $secondaryTextColor;
+  }
+}
+
+.button-close {
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  background-color: $primaryBcgColor;
+  border: 1px solid $modalButtonBorder;
+  transform: scale(1);
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    cursor: pointer;
+    transition: transform 250ms $transitionTimeFunction;
+  }
+}
+
+.button-submit {
+  @include centerFlex(block);
+  margin: 0 auto;
+}
+
+.button-secondary {
+  padding: 6px 22px;
+  background-color: $tertiaryBcgColor;
+  color: $titleTextColor;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+
+  &:hover,
+  &:focus {
+    background: $accentColor;
+    color: $secondaryTextColor;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: background-color 250ms $transitionTimeFunction,
+      color 250ms $transitionTimeFunction,
+      box-shadow 250ms $transitionTimeFunction;
+  }
+}

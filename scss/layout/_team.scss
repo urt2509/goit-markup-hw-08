@@ -1,0 +1,46 @@
+.team {
+  @extend %section;
+  @include centerFlex(flex);
+  background-color: $tertiaryBcgColor;
+
+  &__list {
+    @extend %list;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    text-align: center;
+  }
+
+  &__card {
+    flex-basis: calc((100% - 90px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    background-color: $primaryBcgColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__item {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-transform: none;
+  }
+
+  &__subtitle {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.18;
+    color: $primaryTextColor;
+    margin-bottom: 16px;
+  }
+}
