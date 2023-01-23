@@ -1,5 +1,4 @@
 .projects {
-    @extend %section;
 
     &__filters {
         @include centerFlex(flex);

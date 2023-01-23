@@ -31,15 +31,33 @@ p {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $mediumScreen) {
+    max-width: $mediumScreen;
+  }
+
+  @media screen and (min-width: $tabletScreen) {
+    max-width: $tabletScreen;
+  }
+
+  @media screen and (min-width: $desktopScreen) {
+    max-width: $desktopScreen;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
+
 
 .visually-hidden {
   position: absolute;

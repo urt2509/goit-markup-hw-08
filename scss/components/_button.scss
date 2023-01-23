@@ -26,8 +26,7 @@
 }
 
 .button-send {
-  @include centerFlex(flex);
-  gap: 10px;
+  text-align: center;
   width: 200px;
   height: 50px;
   justify-content: space-evenly;
@@ -40,6 +39,26 @@
 
   &__icon {
     fill: $secondaryTextColor;
+  }
+
+  @media screen and(min-width: $desktopScreen) {
+
+    @include centerFlex(flex);
+    gap: 10px;
+    //   width: 200px;
+    //   height: 50px;
+    //   justify-content: space-evenly;
+    //   align-items: center;
+    //   font-weight: 700;
+    //   font-size: 16px;
+    //   line-height: 1.87;
+    //   letter-spacing: 0.06em;
+    //   color: $secondaryTextColor;
+
+    //   &__icon {
+    //     fill: $secondaryTextColor;
+    //   }
+    // }
   }
 }
 

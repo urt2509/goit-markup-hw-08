@@ -1,11 +1,15 @@
 .footer {
   background-color: $secondaryBcgColor;
+  text-align: center;
 }
 
 .container-footer {
-  @include centerFlex(flex);
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+  text-align: center;
 
+  @media screen and(min-width: $desktopScreen) {
+    @include centerFlex(flex);
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

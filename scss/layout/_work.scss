@@ -1,5 +1,9 @@
 .work {
-  @extend %section;
+
+  @media screen and(max-width:($desktopScreen - 1px)) {
+    display: none;
+  }
+
   padding-top: 0;
 
   &__list {

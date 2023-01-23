@@ -1,10 +1,39 @@
 .page-header {
   border-bottom: 1px solid $borderColor;
+
+  &__button {
+    @include centerFlex(inline-flex);
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    fill: $titleTextColor;
+    background-color: $primaryBcgColor;
+
+    @media screen and (min-width: $tabletScreen) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    color: $titleTextColor;
+  }
 }
 
-.header-nav {
+
+.container--page-header {
   @include centerFlex(flex);
   padding-top: 24px;
   padding-bottom: 25px;
+  justify-content: space-between;
   align-items: center;
+}
+
+
+.page-header__button:hover .page-header__icon,
+.page-header__button:focus .page-header__icon {
+  fill: $accentColor;
+  cursor: pointer;
 }

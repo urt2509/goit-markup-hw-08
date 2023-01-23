@@ -12,6 +12,7 @@
         position: absolute;
         -webkit-appearance: none;
         -moz-appearance: none;
+
     }
 
     &__icon {
@@ -19,12 +20,12 @@
         border-radius: 4px;
         fill: transparent;
 
-        .checkform__input:checked & {
-            fill: $secondaryTextColor;
-            border: transparent;
-            background-color: $accentColor;
-            transition: transform 250ms $transitionTimeFunction;
-        }
+        // .checkform__input:checked. {
+        //     fill: $secondaryTextColor;
+        //     border: transparent;
+        //     background-color: $accentColor;
+        //     transition: transform 250ms $transitionTimeFunction;
+        // }
     }
 
     &__title {
@@ -42,4 +43,11 @@
         text-decoration: underline;
         text-underline-position: under;
     }
+}
+
+.checkform__input:checked+.checkform__icon {
+    fill: $secondaryTextColor;
+    border: transparent;
+    background-color: $accentColor;
+    transition: transform 250ms $transitionTimeFunction;
 }

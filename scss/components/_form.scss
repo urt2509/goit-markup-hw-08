@@ -21,17 +21,17 @@
         border: 1px solid $inputBorderColor;
         border-radius: 4px;
         outline: none;
+
+        &:focus+.form-field__icon {
+            fill: $accentColor;
+            transition: transform 250ms $transitionTimeFunction;
+        }
     }
 
     &__icon {
         position: absolute;
         left: 12px;
         transform: translateY(50%);
-
-        .form-field__input:focus & {
-            fill: $accentColor;
-            transition: transform 250ms $transitionTimeFunction;
-        }
     }
 }
 

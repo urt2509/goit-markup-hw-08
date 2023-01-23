@@ -36,10 +36,12 @@
   &__text {
     margin-bottom: 20px;
     text-transform: uppercase;
+    text-align: center;
   }
 }
 
 .icon-footer {
-  margin-left: 70px;
+  margin-top: 50px;
+  align-items: center;
   color: $secondaryTextColor;
 }

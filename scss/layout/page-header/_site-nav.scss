@@ -1,4 +1,11 @@
 .site-nav {
+  display: none;
+
+
+  @media screen and (min-width: $tabletScreen) {
+    @include centerFlex(inline-block);
+  }
+
   &__list {
     @extend %list;
   }
