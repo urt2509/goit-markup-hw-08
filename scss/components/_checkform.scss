@@ -10,9 +10,9 @@
 
     &__input {
         position: absolute;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-
     }
 
     &__icon {
@@ -29,6 +29,11 @@
     }
 
     &__title {
+        @media screen and(max-width: ($desktopScreen - 1px)) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: inherit;

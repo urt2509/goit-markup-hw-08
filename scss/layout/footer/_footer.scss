@@ -1,10 +1,28 @@
 .footer {
   background-color: $secondaryBcgColor;
   text-align: center;
+
+  &__nav {
+    @media screen and(min-width: $tabletScreen) {
+      @include centerFlex(flex);
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .container-footer {
   text-align: center;
+
+
+  @media screen and(min-width: $tabletScreen) {
+    @include centerFlex(flex);
+    flex-direction: column;
+    max-width: $tabletScreen;
+
+  }
 
   @media screen and(min-width: $desktopScreen) {
     @include centerFlex(flex);

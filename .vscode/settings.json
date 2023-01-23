@@ -17,5 +17,7 @@
   ],
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
-  "liveServer.settings.port": 888
+  "liveServer.settings.port": 888,
+  "editor.fontSize": 12,
+  "editor.bracketPairColorization.enabled": false
 }

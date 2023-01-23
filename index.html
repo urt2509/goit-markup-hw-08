@@ -180,14 +180,17 @@
           <li class="team__card">
             <div class="team__item">
               <picture>
-                <source srcset="">
-
+                <source
+                  srcset="./images/studio/team/idemianenko@1x.jpg  1x, ./images/studio/team/idemianenko@1x.jpg  2x"
+                  media="(min-width: $desktopScreen)">
+                <source
+                  srcset="./images/studio/team/idemianenko-tablet@1x.jpg  1x,./images/studio/team/idemianenko-tablet@1x.jpg  2x"
+                  media="(min-width: $tabletScreen)">
+                <img class="team__image"
+                  srcset="./images/studio/team/idemianenko-mobile@1x.jpg  1x, ./images/studio/team/idemianenko-mobile@1x.jpg  2x"
+                  src="./images/studio/team/idemianenko-mobile@1x.jpg"
+                  alt="Ігор Дем'яненко" />
               </picture>
-              <img srcset="
-              ./images/studio/team/idemianenko@1x.jpg  1x,
-             ./images/studio/team/idemianenko@1x.jpg   2x" class="team__image"
-                src="./images/studio/team/idemianenko@1x.jpg"
-                alt="Ігор Дем'яненко" width="270" height="260" />
               <div>
                 <h3 class="team__title">
                   Ігор Дем'яненко
@@ -234,8 +237,18 @@
           </li>
           <li class="team__card">
             <div class="team__item">
-              <img class="team__image" src="./images/orepina.jpg"
-                alt="Ольга Рєпіна" width="270" height="260" />
+              <picture>
+                <source srcset="./images/studio/team/orepina@1x.jpg 1x, 
+                  ./images/studio/team/orepina@2x.jpg 2x"
+                  media="(min-width: $desktopScreen)">
+                <source srcset="./images/studio/team/orepina-tablet@1x.jpg  1x,
+                  ./images/studio/team/orepina-tablet@2x.jpg  2x"
+                  media="(min-width: $tabletScreen)">
+                <img class="team__image" srcset="./images/studio/team/orepina-mobile@1x.jpg  1x, 
+                  ./images/studio/team/orepina-mobile@2x.jpg  2x"
+                  src="./images/studio/team/orepina-mobile@1x.jpg"
+                  alt="Ольга Рєпіна" />
+              </picture>
               <div>
                 <h3 class="team__title">
                   Ольга Рєпіна
@@ -282,8 +295,18 @@
           </li>
           <li class="team__card">
             <div class="team__item">
-              <img class="team__image" src="./images/mtarasov.jpg"
-                alt="Микола Тарасов" width="270" height="260" />
+              <picture>
+                <source srcset="./images/studio/team/mtarasov@1x.jpg 1x, 
+               ./images/studio/team/mtarasov@2x.jpg  2x"
+                  media="(min-width: $desktopScreen)">
+                <source srcset="./images/studio/team/mtarasov-tablet@1x.jpg  1x,
+               ./images/studio/team/mtarasov-tablet@2x.jpg  2x"
+                  media="(min-width: $tabletScreen)">
+                <img class="team__image" srcset="./images/studio/team/mtarasov-mobile@1x.jpg  1x, 
+                ./images/studio/team/mtarasov-mobile@2x.jpg  2x"
+                  src="./images/studio/team/mtarasov-mobile@1x.jpg"
+                  alt="Микола Тарасов" />
+              </picture>
               <div>
                 <h3 class="team__title">
                   Микола Тарасов
@@ -330,8 +353,18 @@
           </li>
           <li class="team__card">
             <div class="team__item">
-              <img class="team__image" src="./images/myermakov.jpg"
-                alt="Михайло Єрмаков" width="270" height="260" />
+              <picture>
+                <source srcset="./images/studio/team/myermakov@1x.jpg 1x, 
+                ./images/studio/team/myermakov@2x.jpg  2x"
+                  media="(min-width: $desktopScreen)">
+                <source srcset="./images/studio/team/myermakov-tablet@1x.jpg  1x,
+                ./images/studio/team/myermakov-tablet@2x.jpg  2x"
+                  media="(min-width: $tabletScreen)">
+                <img class="team__image" srcset="./images/studio/team/myermakov-mobile@1x.jpg  1x, 
+                ./images/studio/team/myermakov-mobile@2x.jpg  2x"
+                  src="./images/studio/team/myermakov-mobile@1x.jpg"
+                  alt="Михайло Єрмаков" />
+              </picture>
               <div>
                 <h3 class="team__title">
                   Михайло Єрмаков
@@ -443,7 +476,7 @@
 
   <footer class="footer">
     <div class="container container-footer">
-      <div>
+      <div class="footer__nav">
         <a href="./index.html" class="logo">Web<span
             class="logo__accent">Studio</span></a>
         <address class="address">
@@ -460,44 +493,45 @@
                 class="address__link">+38 096 111 11 11</a></li>
           </ul>
         </address>
+        <div class="icon icon-footer">
+          <p class="icon__text">приєднуйтесь</p>
+          <ul class="icon__list">
+            <li>
+              <a href="" class="icon__link icon__link--bottom">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon__link icon__link--bottom">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon__link icon__link--bottom">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="icon__link icon__link--bottom">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="icon icon-footer">
-        <p class="icon__text">приєднуйтесь</p>
-        <ul class="icon__list">
-          <li>
-            <a href="" class="icon__link icon__link--bottom">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="icon__link icon__link--bottom">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="icon__link icon__link--bottom">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook">
-                </use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="icon__link icon__link--bottom">
-              <svg width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin">
-                </use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+
 
       <!-- Форма підвалу -->
 
@@ -639,9 +673,6 @@
       <li class="menu-network__list"><a class="menu-network__link"
           href="">LinkedIn</a></li>
     </ul>
-
-
-
   </div>
 
   <!-- Скріпти -->

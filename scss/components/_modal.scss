@@ -4,13 +4,15 @@
     justify-content: center;
     align-items: center;
     padding: 40px 0;
+    height: 100vh;
+
 
     &__container {
         position: relative;
         width: 100%;
-        max-width: 528px;
+        max-width: 450px;
         height: 100%;
-        max-height: 581px;
+        max-height: 609px;
         padding: 40px;
         background-color: $primaryBcgColor;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -19,6 +21,14 @@
         opacity: 1;
         transition: opacity 250ms $transitionTimeFunction;
         transition: transform 250ms $transitionTimeFunction;
+        overflow-y: auto;
+
+        @media screen and(min-width: $desktopScreen) {
+            max-width: 528px;
+            width: 100%;
+            max-height: 581px;
+            height: 100%;
+        }
     }
 
     &__close {
@@ -29,6 +39,11 @@
     }
 
     &__title {
+
+        @media screen and(max-width: ($desktopScreen - 1px)) {
+            line-height: 1.5;
+        }
+
         margin-bottom: 12px;
         margin-left: auto;
         margin-right: auto;

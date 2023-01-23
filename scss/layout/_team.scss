@@ -3,6 +3,7 @@
   background-color: $tertiaryBcgColor;
   text-align: center;
 
+
   @media screen and(min-width: $desktopScreen) {
     @include centerFlex(flex);
   }
@@ -11,6 +12,14 @@
     @extend %list;
     display: inline-block;
     text-align: center;
+
+    @media screen and(min-width: $tabletScreen) {
+      @include centerFlex(flex);
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
 
     @media screen and(min-width: $desktopScreen) {
       flex-wrap: wrap;
@@ -26,6 +35,10 @@
       0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     margin-top: 30px;
+
+    @media screen and(min-width: $tabletScreen) {
+      flex-basis: calc((100% - 90px) / 2);
+    }
 
     @media screen and(min-width: $desktopScreen) {
       flex-basis: calc((100% - 90px) / 4);
