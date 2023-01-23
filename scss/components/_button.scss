@@ -40,28 +40,20 @@
     top: 8px;
     left: 12px;
     fill: $secondaryTextColor;
+
+    @media screen and(min-width: $desktopScreen) {
+      top: 0;
+    }
   }
 
   @media screen and(min-width: $desktopScreen) {
-
     @include centerFlex(flex);
     gap: 10px;
     justify-content: space-evenly;
     align-items: center;
-    //   width: 200px;
-    //   height: 50px;
-    //   justify-content: space-evenly;
-    //   align-items: center;
-    //   font-weight: 700;
-    //   font-size: 16px;
-    //   line-height: 1.87;
-    //   letter-spacing: 0.06em;
-    //   color: $secondaryTextColor;
-
-    //   &__icon {
-    //     fill: $secondaryTextColor;
-    //   }
-    // }
+    max-width: 200px;
+    width: 100%;
+    padding: 10px 28px;
   }
 }
 

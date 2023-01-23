@@ -10,22 +10,28 @@
       align-items: center;
       margin-bottom: 60px;
     }
+
+
+    @media screen and(min-width: $desktopScreen) {
+      align-items: baseline;
+    }
   }
 }
 
 .container-footer {
   text-align: center;
 
-
   @media screen and(min-width: $tabletScreen) {
     @include centerFlex(flex);
     flex-direction: column;
     max-width: $tabletScreen;
-
   }
 
   @media screen and(min-width: $desktopScreen) {
-    @include centerFlex(flex);
+
+    flex-direction: row;
+    max-width: $desktopScreen;
+    justify-content: space-evenly;
     align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
