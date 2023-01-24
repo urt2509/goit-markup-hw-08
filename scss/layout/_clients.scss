@@ -1,4 +1,11 @@
 .clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width: $desktopScreen) {
+    padding-top: 94px;
+    padding-bottom: 94px
+  }
 
   &__list {
     @include centerFlex(flex);
@@ -34,5 +41,13 @@
 
   &__icon {
     fill: currentColor;
+  }
+}
+
+.heading {
+  margin-bottom: 30px;
+
+  @media screen and(min-width: $desktopScreen) {
+    margin-bottom: 50px;
   }
 }

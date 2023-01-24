@@ -1,49 +1,59 @@
 .contact {
   display: none;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media screen and (min-width: $tabletScreen) {
     @include centerFlex(flex);
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     list-style: none;
-
-    &__link {
-      @include centerFlex(flex);
-      margin-left: auto;
-      justify-content: center;
-      align-items: center;
-      min-width: 135px;
-      color: $primaryTextColor;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      transition: color 250ms $transitionTimeFunction;
-    }
-
-    &__link:hover,
-    &__link:focus {
-      color: $accentColor;
-      transition: color 250ms $transitionTimeFunction;
-    }
-
-    &__icon {
-      margin-right: 10px;
-      fill: currentColor;
-    }
-
-    &__icon:hover,
-    &__icon:focus {
-      fill: currentColor;
-      transition: fill 250ms $transitionTimeFunction;
-    }
+    padding-left: 0;
+    margin-left: auto;
   }
+
+  @media screen and (min-width: $desktopScreen) {
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  &__link {
+    @include centerFlex(flex);
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    min-width: 135px;
+    color: $primaryTextColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms $transitionTimeFunction;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accentColor;
+    transition: color 250ms $transitionTimeFunction;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: currentColor;
+    transition: fill 250ms $transitionTimeFunction;
+  }
+
 
   @media screen and (min-width: 1200px) {
     @include centerFlex(flex);
-
+    margin-left: auto;
   }
 }

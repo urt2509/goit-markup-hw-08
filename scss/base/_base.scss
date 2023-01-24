@@ -37,8 +37,6 @@ img {
 }
 
 .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -54,11 +52,8 @@ img {
 
   @media screen and (min-width: $desktopScreen) {
     max-width: $desktopScreen;
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
-
 
 .visually-hidden {
   position: absolute;

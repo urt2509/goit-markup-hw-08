@@ -5,6 +5,7 @@
   }
 
   padding-top: 0;
+  padding-bottom: 94px;
 
   &__list {
     @extend %list;
@@ -36,5 +37,13 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+  }
+}
+
+.heading {
+  margin-bottom: 30px;
+
+  @media screen and(min-width: $desktopScreen) {
+    margin-bottom: 50px;
   }
 }

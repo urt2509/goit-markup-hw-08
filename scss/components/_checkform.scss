@@ -19,16 +19,14 @@
         border: 2px solid $titleTextColor;
         border-radius: 4px;
         fill: transparent;
-
-        // .checkform__input:checked. {
-        //     fill: $secondaryTextColor;
-        //     border: transparent;
-        //     background-color: $accentColor;
-        //     transition: transform 250ms $transitionTimeFunction;
-        // }
     }
 
     &__title {
+
+        @media screen and(max-width: ($mediumScreen - 1px)) {
+            margin-left: 10px;
+        }
+
         @media screen and(max-width: ($desktopScreen - 1px)) {
             font-size: 12px;
             line-height: 1.16;

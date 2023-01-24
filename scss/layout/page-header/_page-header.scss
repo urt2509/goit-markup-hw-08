@@ -1,6 +1,26 @@
 .page-header {
   border-bottom: 1px solid $borderColor;
 
+  @media screen and(min-width: $tabletScreen) {
+    max-height: 80px;
+  }
+
+  &__box {
+    @include centerFlex(flex);
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and(max-width: ($tabletScreen - 1px)) {
+      height: 60px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+
+    @media screen and(min-width: $tabletScreen) {
+      height: 80px;
+    }
+  }
+
   &__button {
     @include centerFlex(inline-flex);
     justify-content: center;
@@ -15,22 +35,19 @@
     @media screen and (min-width: $tabletScreen) {
       display: none;
     }
-  }
 
-  &__icon {
-    color: $titleTextColor;
+    &__icon {
+      color: $titleTextColor;
+    }
   }
 }
-
 
 .container--page-header {
-  @include centerFlex(flex);
-  padding-top: 24px;
-  padding-bottom: 25px;
-  justify-content: space-between;
-  align-items: center;
+  @media screen and (min-width: $tabletScreen) {
+    @include centerFlex(flex);
+    align-items: center
+  }
 }
-
 
 .page-header__button:hover .page-header__icon,
 .page-header__button:focus .page-header__icon {

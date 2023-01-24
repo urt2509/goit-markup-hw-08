@@ -18,6 +18,10 @@
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
   "liveServer.settings.port": 888,
-  "editor.fontSize": 12,
-  "editor.bracketPairColorization.enabled": false
+  "editor.fontSize": 14,
+  "editor.bracketPairColorization.enabled": true,
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.accessibilityPageSize": 14,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true
 }

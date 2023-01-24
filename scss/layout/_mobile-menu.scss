@@ -43,6 +43,10 @@
 }
 
 .menu-nav {
+    @media screen and(max-width: ($mediumScreen - 1px)) {
+        font-size: 28px;
+    }
+
     @include centerFlex(flex);
     list-style: none;
     margin-top: auto;
@@ -92,6 +96,10 @@
         @extend %link;
         color: $accentColor;
 
+        @media screen and(min-width: $mediumScreen) {
+            font-size: 24px;
+        }
+
         &--mail {
             color: $primaryTextColor;
             font-size: 24px;
@@ -101,11 +109,13 @@
 }
 
 .menu-network {
+
     @include centerFlex(flex);
     list-style: none;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: flex-start;
+    align-items: center;
     margin-bottom: 48px;
     padding-left: 0;
     font-style: normal;
@@ -119,12 +129,20 @@
         color: $accentColor;
     }
 
+
     &__list:not(:last-child) {
         border-right: 1px solid $inputBorderColor;
         padding-right: 10px;
+        padding-left: 10px;
     }
 }
 
 .mobile-menu.is-open {
     transform: translateX(0);
+}
+
+.menu-contact__link {
+    @media screen and(max-width: $mediumScreen) {
+        font-size: 24px;
+    }
 }
